@@ -26,3 +26,45 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+
+
+
+
+  .rsc-float-button {
+
+    
+    box-shadow: 0 0 0 rgba(110,72,170, 0.4);
+    animation: pulse 1.5s infinite 
+  }
+
+  .pulse:hover {
+    animation: none;
+  }
+  
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(110,72,170, 0.4);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 30px rgba(110,72,170, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(110,72,170, 0);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(110,72,170, 0.4);
+      box-shadow: 0 0 0 0 rgba(110,72,170, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 30px rgba(110,72,170, 0);
+        box-shadow: 0 0 0 30px rgba(110,72,170, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(110,72,170, 0);
+        box-shadow: 0 0 0 0 rgba(110,72,170, 0);
+    }
+  }  
+
